@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <map> 
 using namespace std;
 
 /*TASK - 1
@@ -136,8 +137,55 @@ int main() {
 	file1.close();
 }*/
 
-int main() {
+/*TASK - 7
+void countStringOccurrences(const string& filename, const string& apple) {
+    map<string, int> wordCount;
+    string word;
 
-	ofstream file("numbers.txt");
-	
+    ifstream file("string.txt");
+    if (file.is_open()) {
+        while (file >> word) {
+            wordCount[word]++;
+        }
+
+        if (wordCount.find(apple) != wordCount.end()) {
+            cout << "The string \"" << apple << "\" was found "
+                << wordCount[apple] << " times in " << filename << endl;
+        }
+    }
+    file.close();
 }
+
+int main() {
+    string filename = "string.txt";
+    string searchWord = "apple";
+
+    countStringOccurrences(filename, searchWord);
+
+    return 0;
+}*/
+
+/*TASK-8
+int main() {
+    int num;
+    double sum = 0, count = 0;
+    double average = 0.0;
+
+    ifstream file("numbers.txt");   
+    ofstream file1("average.txt");  
+
+    if (file.is_open()) {
+        while (file >> num) {
+            sum += num;
+            count++;
+        }
+		double average = sum / count;
+		file1 << "Average = " << average << endl;
+		cout << "Average calculated successfully" << endl;
+    }
+
+    file.close();
+    file1.close();
+
+    return 0;
+}*/
