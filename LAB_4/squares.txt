@@ -1,0 +1,10 @@
+squares are: 1squares are: 4squares are: 9squares are: 16squares are: 25squares are: 1
+squares are: 4
+squares are: 9
+squares are: 16
+squares are: 25
+squares are: 1
+squares are: 4
+squares are: 9
+squares are: 16
+squares are: 25
